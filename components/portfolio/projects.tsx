@@ -55,7 +55,7 @@ const projects = [
     org: "Politeknik Negeri Malang · PBL Semester 3",
     tags: ["UI/UX", "Figma", "Dokumentasi"],
     variant: "secondary" as const,
-    image: "/sistem-pencatatan-prestasi.png",
+    image: "/Sistem-Pencatatan-Prestasi.png",
     imageAlt: "Sistem Pencatatan Prestasi Mahasiswa",
     points: [
       "Merancang UI interaktif dengan Figma — wireframe, mockup, hingga prototipe.",
