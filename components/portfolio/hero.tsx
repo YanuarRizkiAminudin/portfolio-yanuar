@@ -67,7 +67,7 @@ export function Hero() {
             </div>
 
             <p className="text-muted-foreground leading-relaxed max-w-lg">
-              Mahasiswa D-IV Teknik Informatika Polinema · Semester 5 · IPK{" "}
+              Mahasiswa D-IV Teknik Informatika Polinema · Semester 6 · IPK{" "}
               <span className="font-semibold text-foreground">3.63</span>. Berpengalaman membangun
               dashboard IoT real-time, model AI dengan akurasi 96%, serta antarmuka pengguna interaktif.
             </p>
