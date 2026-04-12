@@ -24,7 +24,7 @@ export function Projects() {
             <li>Menerapkan konsep Digital Twin — representasi virtual sistem fisik traffic light — untuk monitoring dan pengembangan.</li>
           </ul>
           <p className="text-sm text-muted-foreground">
-            <a href="https://github.com/YanuarRizkiAminudin/2026-ganjil-PBF" className="text-blue-500 underline">
+            <a href="https://github.com/alfbrynn/pbl-kel6-smarttraffic.git" className="text-blue-500 underline">
               Lihat di GitHub
             </a>
           </p>
