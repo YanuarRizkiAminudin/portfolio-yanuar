@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 
 export function Projects() {
   return (
@@ -16,8 +17,15 @@ export function Projects() {
             <Badge variant="secondary">Digital Twin</Badge>
           </div>
         </CardHeader>
-        <CardContent className="space-y-2">
+        <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">2026 – Sekarang · Politeknik Negeri Malang</p>
+          <Image
+            src="/smartraf-dashboard.png"
+            alt="Dashboard SMARTRAF - Smart Traffic Light"
+            width={800}
+            height={500}
+            className="rounded-lg border w-full object-cover"
+          />
           <ul className="list-disc pl-5 space-y-1">
             <li>Membangun dashboard monitoring Smart Traffic Light menggunakan React (TypeScript) yang terkoneksi ke perangkat IoT secara real-time.</li>
             <li>Mengintegrasikan data sensor hardware ke tampilan web untuk simulasi dan kontrol lampu lalu lintas otomatis.</li>
@@ -43,11 +51,19 @@ export function Projects() {
             <Badge variant="secondary">Computer Vision</Badge>
           </div>
         </CardHeader>
-        <CardContent className="space-y-2">
+        <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">September 2025 · Politeknik Negeri Malang · Kelompok 6</p>
+          <Image
+            src="/weatherai-app.png"
+            alt="WeatherAI - Aplikasi Klasifikasi Cuaca"
+            width={400}
+            height={600}
+            className="rounded-lg border mx-auto block"
+            style={{ maxHeight: "400px", objectFit: "contain" }}
+          />
           <ul className="list-disc pl-5 space-y-1">
             <li>Mengembangkan model ML (KNN + Manhattan Distance) dengan 29 fitur GLCM, LBP, dan HSV untuk klasifikasi 4 kondisi cuaca.</li>
-            <li>Mencapai akurasi 88.44% dari 225 data uji (F1-Score Rain: 0.97).</li>
+            <li>Mencapai akurasi 88.44% dari 225 data uji (F1-Score Rain: 0.97). Model XGBoost mencapai akurasi 96%.</li>
             <li>Mengintegrasikan model ke aplikasi mobile Flutter untuk prediksi near real-time dari kamera pengguna.</li>
           </ul>
           <p className="text-sm text-muted-foreground">
@@ -70,8 +86,15 @@ export function Projects() {
             <Badge variant="secondary">Prototyping</Badge>
           </div>
         </CardHeader>
-        <CardContent className="space-y-2">
+        <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">Mei – Juli 2025 · Politeknik Negeri Malang · PBL Semester 4</p>
+          <Image
+            src="/simagang-app.png"
+            alt="SIMAgang - Sistem Rekomendasi Magang"
+            width={800}
+            height={450}
+            className="rounded-lg border w-full object-cover"
+          />
           <ul className="list-disc pl-5 space-y-1">
             <li>Membangun front-end website rekomendasi magang menggunakan Laravel (HTML, CSS, JS).</li>
             <li>Merancang user flow dan UI interaktif, serta mengintegrasikan tampilan dengan backend.</li>
@@ -98,7 +121,7 @@ export function Projects() {
             <Badge variant="secondary">Figma</Badge>
           </div>
         </CardHeader>
-        <CardContent className="space-y-2">
+        <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">Oktober – Desember 2024 · Politeknik Negeri Malang · PBL Semester 3</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Merancang UI interaktif dengan Figma — wireframe, mockup, hingga prototipe yang meningkatkan navigasi sistem.</li>
