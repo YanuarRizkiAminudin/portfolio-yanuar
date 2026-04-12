@@ -63,7 +63,7 @@ export function Projects() {
           />
           <ul className="list-disc pl-5 space-y-1">
             <li>Mengembangkan model ML (KNN + Manhattan Distance) dengan 29 fitur GLCM, LBP, dan HSV untuk klasifikasi 4 kondisi cuaca.</li>
-            <li>Mencapai akurasi 88.44% dari 225 data uji (F1-Score Rain: 0.97). Model XGBoost mencapai akurasi 96%.</li>
+            <li>Mencapai akurasi 98.61% dari 225 data uji (F1-Score Rain: 0.97). Model XGBoost mencapai akurasi 96%.</li>
             <li>Mengintegrasikan model ke aplikasi mobile Flutter untuk prediksi near real-time dari kamera pengguna.</li>
           </ul>
           <p className="text-sm text-muted-foreground">
