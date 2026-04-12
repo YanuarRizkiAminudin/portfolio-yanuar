@@ -76,14 +76,14 @@ export function Projects() {
           style={{ animation: `fadeInUp 0.5s ease ${i * 0.1}s both` }}
         >
           {project.image && (
-            <div className="relative w-full overflow-hidden bg-muted" style={{ maxHeight: "280px" }}>
+            <div className="relative w-full overflow-hidden bg-muted flex items-center justify-center" style={{ minHeight: "200px", maxHeight: "360px" }}>
               <Image
                 src={project.image}
                 alt={project.imageAlt}
                 width={900}
-                height={500}
-                className="w-full object-cover object-top transition-transform duration-700 hover:scale-105"
-                style={{ maxHeight: "280px" }}
+                height={600}
+                className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
+                style={{ maxHeight: "360px" }}
               />
             </div>
           )}
