@@ -21,7 +21,7 @@ export function Education() {
 
           <div className="mt-4 pl-13 space-y-3" style={{ paddingLeft: "52px" }}>
             <p className="text-sm font-semibold text-foreground">D-IV Teknik Informatika · Jurusan Teknologi Informasi</p>
-            <p className="text-sm text-muted-foreground">Semester 5 · Aktif</p>
+            <p className="text-sm text-muted-foreground">Semester 6 · Aktif</p>
 
             <div>
               <p className="text-xs text-muted-foreground uppercase tracking-wide font-medium mb-2">Mata Kuliah Relevan</p>
