@@ -123,6 +123,13 @@ export function Projects() {
         </CardHeader>
         <CardContent className="space-y-3">
           <p className="text-sm text-muted-foreground">Oktober – Desember 2024 · Politeknik Negeri Malang · PBL Semester 3</p>
+          <Image
+            src="/Sistem-Pencatatan-Prestasi.png"
+            alt="Sistem Pencatatan Prestasi Mahasiswa"
+            width={800}
+            height={450}
+            className="rounded-lg border w-full object-cover"
+          />
           <ul className="list-disc pl-5 space-y-1">
             <li>Merancang UI interaktif dengan Figma — wireframe, mockup, hingga prototipe yang meningkatkan navigasi sistem.</li>
             <li>Menyusun dokumentasi teknis (Project Charter, WBS, RAB, Risk Management) bersama tim backend.</li>
