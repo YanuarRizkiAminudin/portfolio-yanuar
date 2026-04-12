@@ -24,7 +24,7 @@ export function Projects() {
             <li>Menerapkan konsep Digital Twin — representasi virtual sistem fisik traffic light — untuk monitoring dan pengembangan.</li>
           </ul>
           <p className="text-sm text-muted-foreground">
-            <a href="https://github.com/alfbrynn/pbl-kel6-smarttraffic.git" className="text-blue-500 underline">
+            <a href="https://github.com/alfbrynn/pbl-kel6-smarttraffic" className="text-blue-500 underline">
               Lihat di GitHub
             </a>
           </p>
@@ -50,6 +50,11 @@ export function Projects() {
             <li>Mencapai akurasi 88.44% dari 225 data uji (F1-Score Rain: 0.97).</li>
             <li>Mengintegrasikan model ke aplikasi mobile Flutter untuk prediksi near real-time dari kamera pengguna.</li>
           </ul>
+          <p className="text-sm text-muted-foreground">
+            <a href="https://github.com/weather-classification-kelompok6" className="text-blue-500 underline">
+              Lihat di GitHub
+            </a>
+          </p>
         </CardContent>
       </Card>
 
