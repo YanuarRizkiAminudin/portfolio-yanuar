@@ -98,13 +98,12 @@ export function Hero() {
             style={{ animation: "fadeInUp 0.6s ease 0.15s both" }}
           >
             <div className="relative">
-              <div className="absolute -inset-2 rounded-full bg-primary/10 blur-xl" />
               <Image
-                src="/potret-profesional-untuk-portofolio-min.png"
+                src="/potret-profesional-untuk-portofolio-min.jpg"
                 alt="Yanuar Rizki Aminudin"
                 width={240}
                 height={240}
-                className="relative rounded-full border-4 border-background shadow-2xl object-cover"
+                className="rounded-full border-4 border-border shadow-lg object-cover"
                 style={{ aspectRatio: "1/1" }}
                 priority
               />
