@@ -99,7 +99,7 @@ export function Hero() {
           >
             <div className="relative">
               <Image
-                src="/potret-profesional-untuk-portofolio-min.jpg"
+                src="/potret-profesional-untuk-portofolio-min.png"
                 alt="Yanuar Rizki Aminudin"
                 width={240}
                 height={240}
