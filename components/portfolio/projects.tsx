@@ -23,7 +23,7 @@ export function Projects() {
             src="/smartraf-dashboard.png"
             alt="Dashboard SMARTRAF - Smart Traffic Light"
             width={300}
-            height={500}
+            height={150}
             className="rounded-lg border w-full object-cover"
           />
           <ul className="list-disc pl-5 space-y-1">
