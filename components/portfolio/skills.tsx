@@ -6,39 +6,78 @@ export function Skills() {
     <div className="grid gap-4 md:grid-cols-3">
       <Card>
         <CardHeader>
-          <CardTitle>UI/UX Design</CardTitle>
+          <CardTitle>IoT & Digital Twin</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">Figma</Badge>
-          <Badge variant="outline">Adobe XD</Badge>
-          <Badge variant="outline">Prototyping</Badge>
-          <Badge variant="outline">User Flow</Badge>
-          <Badge variant="outline">Usability Testing</Badge>
+          <Badge variant="outline">Sensor Integration</Badge>
+          <Badge variant="outline">Digital Twin</Badge>
+          <Badge variant="outline">Real-time Monitoring</Badge>
+          <Badge variant="outline">React (TypeScript)</Badge>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle>Front End Development</CardTitle>
+          <CardTitle>AI & Machine Learning</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-2">
+          <Badge variant="outline">KNN</Badge>
+          <Badge variant="outline">GLCM / LBP / HSV</Badge>
+          <Badge variant="outline">scikit-learn</Badge>
+          <Badge variant="outline">XGBoost</Badge>
+          <Badge variant="outline">OpenCV</Badge>
+          <Badge variant="outline">Jupyter Notebook</Badge>
+          <Badge variant="outline">Google Colab</Badge>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Web Development</CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-wrap gap-2">
+          <Badge variant="outline">React (TypeScript)</Badge>
+          <Badge variant="outline">Laravel (PHP)</Badge>
           <Badge variant="outline">HTML</Badge>
           <Badge variant="outline">CSS</Badge>
           <Badge variant="outline">JavaScript</Badge>
-          <Badge variant="outline">React (dasar)</Badge>
-          <Badge variant="outline">Responsive Design</Badge>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle>Desain & Dokumentasi</CardTitle>
+          <CardTitle>Mobile Development</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-2">
+          <Badge variant="outline">Flutter (Dart)</Badge>
+          <Badge variant="outline">Integrasi Model ML</Badge>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Data & Analitik</CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-wrap gap-2">
+          <Badge variant="outline">Microsoft Excel</Badge>
+          <Badge variant="outline">Looker</Badge>
+          <Badge variant="outline">Confusion Matrix</Badge>
+          <Badge variant="outline">MinMaxScaler</Badge>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Design & Kolaborasi</CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-wrap gap-2">
+          <Badge variant="outline">Figma</Badge>
           <Badge variant="outline">Wireframing</Badge>
-          <Badge variant="outline">Mockup</Badge>
-          <Badge variant="outline">User Documentation</Badge>
-          <Badge variant="outline">Style Guide</Badge>
+          <Badge variant="outline">Prototyping</Badge>
+          <Badge variant="outline">Git</Badge>
+          <Badge variant="outline">GitHub</Badge>
+          <Badge variant="outline">Canva</Badge>
+          <Badge variant="outline">Adobe Photoshop</Badge>
         </CardContent>
       </Card>
     </div>

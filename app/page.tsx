@@ -43,7 +43,7 @@ export default function Page() {
             </a>
           </nav>
           <div className="flex items-center gap-2">
-            <a href="mailto:yanuarrizky24@gmail.com">
+            <a href="mailto:yanuariyan24@gmail.com">
               <Button variant="default">Hubungi Saya</Button>
             </a>
           </div>
@@ -58,14 +58,17 @@ export default function Page() {
           <CardContent className="grid gap-6 md:grid-cols-[1fr_280px] md:gap-10 py-6">
             <div className="space-y-4">
               <p className="text-pretty leading-relaxed">
-                Mahasiswa Teknik Informatika Polinema angkatan 2023 dengan minat kuat di desain antarmuka pengguna
-                (UI/UX) dan pengembangan web front-end. Terbiasa bekerja dalam tim, cepat beradaptasi, dan memiliki
-                pengalaman merancang antarmuka interaktif serta mendokumentasikan proyek digital secara profesional.
+                Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang (Semester 5) yang antusias di bidang IoT,
+                Digital Twin, dan AI. Berpengalaman mengaplikasikan Laravel dan React untuk pengembangan web,
+                mengintegrasikan sensor IoT ke dashboard, dan membangun model machine learning. Siap berkontribusi
+                dalam pengembangan aset tracker dan simulasi layout penempatan mesin di lingkungan industri.
               </p>
               <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">IoT & Digital Twin</Badge>
+                <Badge variant="secondary">AI & Machine Learning</Badge>
+                <Badge variant="secondary">Front-end Development</Badge>
                 <Badge variant="secondary">UI/UX Design</Badge>
-                <Badge variant="secondary">Front End Coding</Badge>
-                <Badge variant="secondary">Desain & Dokumentasi</Badge>
+                <Badge variant="secondary">Mobile Development</Badge>
               </div>
             </div>
             <div className="flex items-start justify-center">
@@ -111,7 +114,7 @@ export default function Page() {
         <div className="mx-auto max-w-5xl px-4 py-6 flex items-center justify-between text-sm">
           <span>© {new Date().getFullYear()} Yanuar Rizki Aminudin</span>
           <div className="flex gap-3">
-            <a className="hover:text-primary" href="mailto:yanuarrizky24@gmail.com">
+            <a className="hover:text-primary" href="mailto:yanuariyan24@gmail.com">
               Email
             </a>
             <a className="hover:text-primary" href="tel:089666832419">
