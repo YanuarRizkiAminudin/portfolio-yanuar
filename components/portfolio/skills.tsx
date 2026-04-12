@@ -1,85 +1,93 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
+const skillGroups = [
+  {
+    title: "IoT & Digital Twin",
+    icon: "📡",
+    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
+    skills: ["Sensor Integration", "Digital Twin", "Real-time Monitoring", "ESP8266/NodeMCU", "Arduino", "React (TypeScript)"],
+  },
+  {
+    title: "AI & Machine Learning",
+    icon: "🤖",
+    color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
+    skills: ["KNN", "XGBoost", "SVM", "GLCM / LBP / HSV", "scikit-learn", "OpenCV", "Jupyter Notebook", "Google Colab"],
+  },
+  {
+    title: "Web Development",
+    icon: "🌐",
+    color: "bg-green-500/10 text-green-600 dark:text-green-400",
+    skills: ["React (TypeScript)", "Laravel (PHP)", "HTML", "CSS", "JavaScript", "Responsive Design"],
+  },
+  {
+    title: "Mobile Development",
+    icon: "📱",
+    color: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
+    skills: ["Flutter (Dart)", "Integrasi Model ML", "Camera API"],
+  },
+  {
+    title: "Data & Analitik",
+    icon: "📊",
+    color: "bg-teal-500/10 text-teal-600 dark:text-teal-400",
+    skills: ["Microsoft Excel", "Looker", "Confusion Matrix", "MinMaxScaler", "F1-Score Analysis"],
+  },
+  {
+    title: "Design & Kolaborasi",
+    icon: "🎨",
+    color: "bg-pink-500/10 text-pink-600 dark:text-pink-400",
+    skills: ["Figma", "Wireframing", "Prototyping", "Git", "GitHub (PR & Branching)", "Canva", "Adobe Photoshop"],
+  },
+  {
+    title: "Bahasa",
+    icon: "💬",
+    color: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400",
+    skills: ["Indonesia (Native)", "English (Passive – B1)", "Mandarin (Beginner – TBCL 2)"],
+  },
+  {
+    title: "Soft Skills",
+    icon: "🤝",
+    color: "bg-gray-500/10 text-gray-600 dark:text-gray-400",
+    skills: ["Kerja Tim", "GitHub Pull Request", "Dokumentasi Teknis", "Problem Solving", "Manajemen Proyek"],
+  },
+]
+
 export function Skills() {
   return (
-    <div className="grid gap-4 md:grid-cols-3">
-      <Card>
-        <CardHeader>
-          <CardTitle>IoT & Digital Twin</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">Sensor Integration</Badge>
-          <Badge variant="outline">Digital Twin</Badge>
-          <Badge variant="outline">Real-time Monitoring</Badge>
-          <Badge variant="outline">React (TypeScript)</Badge>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>AI & Machine Learning</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">KNN</Badge>
-          <Badge variant="outline">GLCM / LBP / HSV</Badge>
-          <Badge variant="outline">scikit-learn</Badge>
-          <Badge variant="outline">XGBoost</Badge>
-          <Badge variant="outline">OpenCV</Badge>
-          <Badge variant="outline">Jupyter Notebook</Badge>
-          <Badge variant="outline">Google Colab</Badge>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Web Development</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">React (TypeScript)</Badge>
-          <Badge variant="outline">Laravel (PHP)</Badge>
-          <Badge variant="outline">HTML</Badge>
-          <Badge variant="outline">CSS</Badge>
-          <Badge variant="outline">JavaScript</Badge>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Mobile Development</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">Flutter (Dart)</Badge>
-          <Badge variant="outline">Integrasi Model ML</Badge>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Data & Analitik</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">Microsoft Excel</Badge>
-          <Badge variant="outline">Looker</Badge>
-          <Badge variant="outline">Confusion Matrix</Badge>
-          <Badge variant="outline">MinMaxScaler</Badge>
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Design & Kolaborasi</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-wrap gap-2">
-          <Badge variant="outline">Figma</Badge>
-          <Badge variant="outline">Wireframing</Badge>
-          <Badge variant="outline">Prototyping</Badge>
-          <Badge variant="outline">Git</Badge>
-          <Badge variant="outline">GitHub</Badge>
-          <Badge variant="outline">Canva</Badge>
-          <Badge variant="outline">Adobe Photoshop</Badge>
-        </CardContent>
-      </Card>
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {skillGroups.map((group, i) => (
+        <Card
+          key={group.title}
+          className="group transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+          style={{ animation: `fadeInUp 0.5s ease ${i * 0.07}s both` }}
+        >
+          <CardHeader className="pb-2">
+            <CardTitle className="flex items-center gap-2 text-base">
+              <span className={`text-xl p-1.5 rounded-lg ${group.color}`}>{group.icon}</span>
+              {group.title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-wrap gap-1.5">
+            {group.skills.map((skill) => (
+              <Badge
+                key={skill}
+                variant="outline"
+                className="text-xs font-normal transition-colors duration-200 group-hover:border-primary/40"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </CardContent>
+        </Card>
+      ))}
+      <style>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(16px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   )
 }

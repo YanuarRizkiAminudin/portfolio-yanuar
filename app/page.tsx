@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 
 import { Hero } from "@/components/portfolio/hero"
@@ -9,75 +8,84 @@ import { Skills } from "@/components/portfolio/skills"
 import { Projects } from "@/components/portfolio/projects"
 import { Education } from "@/components/portfolio/education"
 import { Organization } from "@/components/portfolio/organization"
+import { Certificates } from "@/components/portfolio/certificates"
 import { Contact } from "@/components/portfolio/contact"
 
 export default function Page() {
   return (
     <main className="min-h-dvh">
-      <header className="border-b bg-card/60 backdrop-blur supports-[backdrop-filter]:bg-card/50">
-        <div className="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+      {/* Header */}
+      <header className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60 transition-all">
+        <div className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="size-9 rounded-full bg-primary text-primary-foreground grid place-items-center font-semibold">
+            <div className="size-8 rounded-full bg-primary text-primary-foreground grid place-items-center font-bold text-sm">
               YR
             </div>
-            <span className="font-semibold">Yanuar Rizki Aminudin</span>
+            <span className="font-semibold text-sm hidden sm:block">Yanuar Rizki Aminudin</span>
           </div>
-          <nav className="hidden md:flex items-center gap-3">
-            <a className="text-sm hover:text-primary" href="#profil">
-              Profil
-            </a>
-            <a className="text-sm hover:text-primary" href="#keterampilan">
-              Keterampilan
-            </a>
-            <a className="text-sm hover:text-primary" href="#proyek">
-              Proyek
-            </a>
-            <a className="text-sm hover:text-primary" href="#pendidikan">
-              Pendidikan
-            </a>
-            <a className="text-sm hover:text-primary" href="#organisasi">
-              Organisasi
-            </a>
-            <a className="text-sm hover:text-primary" href="#kontak">
-              Kontak
-            </a>
+          <nav className="hidden md:flex items-center gap-1">
+            {[
+              ["#profil", "Profil"],
+              ["#keterampilan", "Keterampilan"],
+              ["#proyek", "Proyek"],
+              ["#pendidikan", "Pendidikan"],
+              ["#sertifikat", "Sertifikat"],
+              ["#organisasi", "Organisasi"],
+              ["#kontak", "Kontak"],
+            ].map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                className="text-sm px-3 py-1.5 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+              >
+                {label}
+              </a>
+            ))}
           </nav>
-          <div className="flex items-center gap-2">
-            <a href="mailto:yanuariyan24@gmail.com">
-              <Button variant="default">Hubungi Saya</Button>
-            </a>
-          </div>
+          <a href="mailto:yanuariyan24@gmail.com">
+            <Button size="sm" className="font-semibold">Hubungi Saya</Button>
+          </a>
         </div>
       </header>
 
+      {/* Hero */}
       <Hero />
 
-      <section id="profil" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
+      {/* Profil */}
+      <section id="profil" className="mx-auto max-w-5xl px-4 py-14 md:py-20">
         <SectionHeading title="Profil" subtitle="Tentang saya secara singkat" />
         <Card>
-          <CardContent className="grid gap-6 md:grid-cols-[1fr_280px] md:gap-10 py-6">
+          <CardContent className="grid gap-8 md:grid-cols-[1fr_240px] md:gap-12 py-8">
             <div className="space-y-4">
-              <p className="text-pretty leading-relaxed">
-                Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang (Semester 5) yang antusias di bidang IoT,
-                Digital Twin, dan AI. Berpengalaman mengaplikasikan Laravel dan React untuk pengembangan web,
-                mengintegrasikan sensor IoT ke dashboard, dan membangun model machine learning. Siap berkontribusi
-                dalam pengembangan aset tracker dan simulasi layout penempatan mesin di lingkungan industri.
+              <p className="leading-relaxed text-muted-foreground">
+                Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang (Semester 5) dengan IPK{" "}
+                <span className="font-semibold text-foreground">3.63</span> yang antusias di bidang IoT,
+                Digital Twin, dan AI. Berpengalaman mengaplikasikan Laravel dan React untuk pengembangan
+                web, mengintegrasikan sensor IoT ke dashboard real-time, dan membangun model machine
+                learning dengan akurasi tinggi. Siap berkontribusi dalam pengembangan aset tracker dan
+                simulasi layout penempatan mesin di lingkungan industri.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">IoT & Digital Twin</Badge>
-                <Badge variant="secondary">AI & Machine Learning</Badge>
-                <Badge variant="secondary">Front-end Development</Badge>
-                <Badge variant="secondary">UI/UX Design</Badge>
-                <Badge variant="secondary">Mobile Development</Badge>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 pt-2">
+                {[
+                  { label: "IPK", value: "3.63" },
+                  { label: "Semester", value: "5" },
+                  { label: "Proyek", value: "4+" },
+                  { label: "Akurasi ML", value: "96%" },
+                ].map((s) => (
+                  <div key={s.label} className="rounded-xl border bg-muted/40 p-3 text-center">
+                    <p className="text-xl font-bold">{s.value}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{s.label}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="flex items-start justify-center">
+            <div className="flex justify-center md:justify-end">
               <Image
-                src="/potret-profesional-untuk-portofolio.png"
-                alt="Potret profesional"
-                width={280}
-                height={280}
-                className="rounded-xl border"
+                src="/potret-profesional-untuk-portofolio-min.jpg"
+                alt="Yanuar Rizki Aminudin"
+                width={220}
+                height={220}
+                className="rounded-2xl border shadow-md object-cover aspect-square"
                 priority
               />
             </div>
@@ -85,41 +93,56 @@ export default function Page() {
         </Card>
       </section>
 
-      <section id="keterampilan" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <SectionHeading title="Keterampilan" subtitle="Kemampuan & alat yang digunakan" />
-        <Skills />
+      {/* Keterampilan */}
+      <section id="keterampilan" className="bg-muted/30">
+        <div className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+          <SectionHeading title="Keterampilan" subtitle="Kemampuan & alat yang digunakan" />
+          <Skills />
+        </div>
       </section>
 
-      <section id="proyek" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
+      {/* Proyek */}
+      <section id="proyek" className="mx-auto max-w-5xl px-4 py-14 md:py-20">
         <SectionHeading title="Proyek Kampus" subtitle="Kontribusi & hasil yang dicapai" />
         <Projects />
       </section>
 
-      <section id="pendidikan" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <SectionHeading title="Pendidikan" subtitle="Riwayat pendidikan" />
-        <Education />
+      {/* Pendidikan */}
+      <section id="pendidikan" className="bg-muted/30">
+        <div className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+          <SectionHeading title="Pendidikan" subtitle="Riwayat pendidikan" />
+          <Education />
+        </div>
       </section>
 
-      <section id="organisasi" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <SectionHeading title="Organisasi" subtitle="Aktivitas & tanggung jawab" />
-        <Organization />
+      {/* Sertifikat */}
+      <section id="sertifikat" className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+        <SectionHeading title="Sertifikat" subtitle="Pencapaian & bukti kompetensi" />
+        <Certificates />
       </section>
 
-      <section id="kontak" className="mx-auto max-w-5xl px-4 py-12 md:py-16">
+      {/* Organisasi */}
+      <section id="organisasi" className="bg-muted/30">
+        <div className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+          <SectionHeading title="Organisasi" subtitle="Aktivitas & tanggung jawab" />
+          <Organization />
+        </div>
+      </section>
+
+      {/* Kontak */}
+      <section id="kontak" className="mx-auto max-w-5xl px-4 py-14 md:py-20">
         <SectionHeading title="Kontak" subtitle="Mari terhubung dan berkolaborasi" />
         <Contact />
       </section>
 
-      <footer className="border-t">
-        <div className="mx-auto max-w-5xl px-4 py-6 flex items-center justify-between text-sm">
+      {/* Footer */}
+      <footer className="border-t bg-card">
+        <div className="mx-auto max-w-5xl px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-muted-foreground">
           <span>© {new Date().getFullYear()} Yanuar Rizki Aminudin</span>
-          <div className="flex gap-3">
-            <a className="hover:text-primary" href="mailto:yanuariyan24@gmail.com">
-              Email
-            </a>
-            <a className="hover:text-primary" href="tel:089666832419">
-              Telepon
-            </a>
+          <div className="flex gap-4">
+            <a className="hover:text-foreground transition-colors" href="mailto:yanuariyan24@gmail.com">Email</a>
+            <a className="hover:text-foreground transition-colors" href="tel:089666832419">Telepon</a>
+            <a className="hover:text-foreground transition-colors" href="https://github.com/YanuarRizkiAminudin" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </footer>
