@@ -81,7 +81,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/potret-profesional-untuk-portofolio-min.jpg"
+                src="/potret-profesional-untuk-portofolio-min.png"
                 alt="Yanuar Rizki Aminudin"
                 width={220}
                 height={220}
