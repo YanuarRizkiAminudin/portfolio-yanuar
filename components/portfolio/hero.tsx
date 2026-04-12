@@ -25,7 +25,7 @@ export function Hero() {
           <div className="rounded-xl border p-4 bg-primary text-primary-foreground">
             <p className="text-sm opacity-90">Status</p>
             <p className="font-medium">Mahasiswa TI Polinema (2023 — Sekarang)</p>
-            <p className="text-sm opacity-75 mt-1">IPK 3.63 · Semester 5</p>
+            <p className="text-sm opacity-75 mt-1">IPK 3.63 · Semester 6</p>
           </div>
         </div>
       </div>
