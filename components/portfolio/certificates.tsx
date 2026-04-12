@@ -42,12 +42,13 @@ export function Certificates() {
           className="overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 group"
           style={{ animation: `fadeInUp 0.5s ease ${i * 0.1}s both` }}
         >
-          <div className="relative overflow-hidden bg-muted" style={{ height: "160px" }}>
+          <div className="relative overflow-hidden bg-muted flex items-center justify-center" style={{ minHeight: "160px" }}>
             <Image
               src={cert.image}
               alt={cert.title}
-              fill
-              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              width={800}
+              height={500}
+              className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <CardContent className="pt-4 space-y-2">
