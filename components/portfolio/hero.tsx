@@ -100,7 +100,7 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -inset-2 rounded-full bg-primary/10 blur-xl" />
               <Image
-                src="/potret-profesional-untuk-portofolio-min.jpg"
+                src="/potret-profesional-untuk-portofolio-min.png"
                 alt="Yanuar Rizki Aminudin"
                 width={240}
                 height={240}
