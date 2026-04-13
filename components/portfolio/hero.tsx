@@ -69,7 +69,7 @@ export function Hero() {
             <p className="text-muted-foreground leading-relaxed max-w-lg">
               Mahasiswa D-IV Teknik Informatika Polinema · Semester 6 · IPK{" "}
               <span className="font-semibold text-foreground">3.63</span>. Berpengalaman membangun
-              dashboard IoT real-time, model AI dengan akurasi 96%, serta antarmuka pengguna interaktif.
+              dashboard IoT real-time, model AI dengan akurasi 98%, serta antarmuka pengguna interaktif.
             </p>
 
             <div className="flex flex-wrap gap-2">
@@ -112,7 +112,7 @@ export function Hero() {
               {[
                 { label: "IPK", value: "3.63" },
                 { label: "Proyek", value: "4+" },
-                { label: "Akurasi ML", value: "96%" },
+                { label: "Akurasi ML", value: "98%" },
               ].map((stat) => (
                 <div key={stat.label} className="rounded-xl border bg-background p-3 text-center shadow-sm">
                   <p className="text-lg font-bold">{stat.value}</p>

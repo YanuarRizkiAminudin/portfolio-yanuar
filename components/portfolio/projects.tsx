@@ -29,7 +29,7 @@ const projects = [
     imageAlt: "WeatherAI Aplikasi Klasifikasi Cuaca Flutter",
     points: [
       "Model ML (KNN + Manhattan Distance) dengan 29 fitur GLCM, LBP, HSV untuk 4 kondisi cuaca.",
-      "Akurasi 88.44% (KNN) dan 96% (XGBoost) dari 225 data uji · F1-Score Rain: 0.97.",
+      "Akurasi 88.44% (KNN) dan 98% (XGBoost) dari 225 data uji · F1-Score Rain: 0.97.",
       "Integrasi model ke aplikasi Flutter untuk prediksi near real-time via kamera pengguna.",
     ],
     github: "https://github.com/weather-classification-kelompok6",

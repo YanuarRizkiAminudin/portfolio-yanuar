@@ -58,7 +58,7 @@ export default function Page() {
           <CardContent className="grid gap-8 md:grid-cols-[1fr_240px] md:gap-12 py-8">
             <div className="space-y-4">
               <p className="leading-relaxed text-muted-foreground">
-                Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang (Semester 5) dengan IPK{" "}
+                Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang (Semester 6) dengan IPK{" "}
                 <span className="font-semibold text-foreground">3.63</span> yang antusias di bidang IoT,
                 Digital Twin, dan AI. Berpengalaman mengaplikasikan Laravel dan React untuk pengembangan
                 web, mengintegrasikan sensor IoT ke dashboard real-time, dan membangun model machine
@@ -68,7 +68,7 @@ export default function Page() {
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 pt-2">
                 {[
                   { label: "IPK", value: "3.63" },
-                  { label: "Semester", value: "5" },
+                  { label: "Semester", value: "6" },
                   { label: "Proyek", value: "4+" },
                   { label: "Akurasi ML", value: "96%" },
                 ].map((s) => (
