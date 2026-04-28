@@ -7,7 +7,7 @@ const certificates = [
     title: "Panitia – Forsimpro Goes To School 2024",
     issuer: "Forum Komunikasi Mahasiswa Polinema Probolinggo",
     date: "30 Desember 2024",
-    image: "/sertifikat-forsimpro-goes-to-school.png",
+    image: "/sertifikat-forsimpro-goes-to-school1.png",
     tag: "Organisasi",
   },
   {
