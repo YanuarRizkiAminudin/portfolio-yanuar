@@ -7,7 +7,7 @@ const certificates = [
     title: "Ketua Divisi Creator Media – FORSIMPRO 2025/2026",
     issuer: "Forum Mahasiswa Polinema Probolinggo",
     date: "28 Maret 2026",
-    image: "/sertifikat-forsimpro-goes-to-school1.png",
+    image: "/sertifikat-pengurus-forsimpro.png",
     tag: "Organisasi",
   },
   {
