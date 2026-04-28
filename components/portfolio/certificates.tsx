@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const certificates = [
   {
-    title: "Ketua Divisi Creator Media – FORSIMPRO 2025/2026",
+    title: "Ketua Divisi Creator Media – FORSIMPRO 2024/2025",
     issuer: "Forum Mahasiswa Polinema Probolinggo",
     date: "28 Maret 2026",
     image: "/sertifikat-pengurus-forsimpro.png",
