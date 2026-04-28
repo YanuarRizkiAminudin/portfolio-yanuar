@@ -4,9 +4,9 @@ import Image from "next/image"
 
 const certificates = [
   {
-    title: "Panitia – Forsimpro Goes To School 2024",
-    issuer: "Forum Komunikasi Mahasiswa Polinema Probolinggo",
-    date: "30 Desember 2024",
+    title: "Ketua Divisi Creator Media – FORSIMPRO 2025/2026",
+    issuer: "Forum Mahasiswa Polinema Probolinggo",
+    date: "28 Maret 2026",
     image: "/sertifikat-forsimpro-goes-to-school1.png",
     tag: "Organisasi",
   },
